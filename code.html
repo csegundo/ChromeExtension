@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="texto-prueba">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, vel!
+    </span>
+
+    <script>
+        function highlight(){
+            try{
+                var selection = window.getSelection().getRangeAt(0);
+                changeElement(selection);
+            } catch(ignoreThis){}
+        }
+
+        function changeElement(selection) {
+            var highlighter = document.createElement("span");
+            highlighter.setAttribute("style", "background-color: #FFF49C;");
+            selection.surroundContents(highlighter);
+        }
+    </script>
+
+    <button onclick="highlight()">Click 1</button>
+</body>
+</html>

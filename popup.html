@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+        body{
+            background-color: #4f4f4f;
+            color: #fff
+        }
+		button {
+			height: 30px;
+			width: 30px;
+			outline: none;
+            margin-right: 3px;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 5px;
+		}
+        .selection{
+            display: flex;
+        }
+        .sign{
+            position: fixed;
+            bottom: 2px;
+            right: 2px;
+        }
+        #action{
+            width: 100%;
+            margin: 5px 0 15px 0;
+            color: #fff;
+            background-color: #343A40;
+        }
+        #action:hover{
+            background-color: #23272b;
+        }
+        .color.yellow{ background-color: #FFF49C; }
+        .color.green{ background-color: #85DE77; }
+        .color.blue{ background-color: #5DB1D1; }
+        .color.pink{ background-color: #F6A8A6; }
+	</style>
+</head>
+<body>
+    <h3>Selecciona un color</h3>
+    <div class="selection">
+        <button class="color yellow" value="#FFF49C"></button>
+        <button class="color green" value="#85DE77"></button>
+        <button class="color blue" value="#5DB1D1"></button>
+        <button class="color pink" value="#F6A8A6"></button>
+    </div>
+    <button id="action">Highligth</button>
+    <span class="sign">Made by csegundo</span>
+    <script src="popup.js"></script>
+</body>
+</html>
