@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<style>
         body{
             background-color: #4f4f4f;
-            color: #fff
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
         }
-		button {
+		button,
+        input.color{
 			height: 30px;
 			width: 30px;
 			outline: none;
@@ -14,7 +18,16 @@
             cursor: pointer;
             border: 1px solid #000;
             border-radius: 5px;
+            font-family: inherit;
 		}
+        input.color{
+            padding: 0;
+            width: 28px;
+            height: 28px;
+        }
+        input.color::-webkit-color-swatch {
+            border: none;
+        }
         .selection{
             display: flex;
         }
@@ -45,6 +58,7 @@
         <button class="color green" value="#85DE77"></button>
         <button class="color blue" value="#5DB1D1"></button>
         <button class="color pink" value="#F6A8A6"></button>
+        <input type="color" class="color custom" value="#000000">
     </div>
     <button id="action">Highligth</button>
     <span class="sign">Made by csegundo</span>
