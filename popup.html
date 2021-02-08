@@ -31,6 +31,8 @@
         }
         .selection{
             display: flex;
+            width: 150px;
+            justify-content: center;
         }
         .sign{
             position: fixed;
@@ -55,14 +57,15 @@
 <body>
     <h3>Selecciona un color</h3>
     <div class="selection">
-        <button class="color yellow" value="#FFF49C"></button>
-        <button class="color green" value="#85DE77"></button>
-        <button class="color blue" value="#5DB1D1"></button>
-        <button class="color pink" value="#F6A8A6"></button>
-        <input type="color" class="color custom" value="#000000">
+        <button class="color yellow" name="#FFF49C"></button>
+        <button class="color green" name="#85DE77"></button>
+        <button class="color blue" name="#5DB1D1"></button>
+        <button class="color pink" name="#F6A8A6"></button>
+        <!-- <input type="color" class="color custom" value="#000000"> -->
     </div>
     <button id="action">Highligth</button>
     <span class="sign">Made by csegundo</span>
     <script src="popup.js"></script>
+    <script src="options.js"></script>
 </body>
 </html>

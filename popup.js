@@ -2,6 +2,7 @@ var colors = document.getElementsByClassName('color'),
     action = document.getElementById('action');
 
 function _setColor(color){
+    // alert('c l i c k' + color);
     chrome.storage.sync.set({ '_hl_color' : color }, function() {
         console.log("You have selected the color: ".concat(color));
     });
@@ -18,7 +19,7 @@ action.onclick = function(){
 };
 
 for(var i = 0; i < colors.length; i++){
-    var btn = colors[i], color = btn.value;
+    var btn = colors[i], color = btn.name;
     btn.onclick = function(){
         _setColor(color);
     };
