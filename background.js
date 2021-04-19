@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({ '_hl_color' : '#FFF49C'}, function() {
+    chrome.storage.sync.set({ _hl_color : '#FFF49C'}, function() {
         console.log("Default color: #FFF49C");
     });
 
